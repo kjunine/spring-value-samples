@@ -1,0 +1,3 @@
+Spring @Value Samples
+=====================
+
