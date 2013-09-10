@@ -28,3 +28,17 @@ You can pass VM arguments to enable different mode. Compare result between these
 
 	-Dspring.profiles.active=standard -Dsample.home=config "-Dsample.name=System Name" "-Dsample.test=System Test" -Dsample.no=4 -Dsample.value=40.0 -Dsample.flag=false
 
+Or You can just run these eclipse launch files.
+
+* Development
+
+	SampleValueMain development.launch
+
+* Standard
+
+	SampleValueMain standard.launch
+
+* System
+
+	SampleValueMain system.launch
+

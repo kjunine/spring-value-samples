@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/spring-value-samples/src/main/java/net/kjunine/sample/value/SampleValueMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.kjunine.sample.value.SampleValueMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="spring-value-samples"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dspring.profiles.active=standard -Dsample.home=config &quot;-Dsample.name=System Name&quot; &quot;-Dsample.test=System Test&quot; -Dsample.no=4 -Dsample.value=40.0 -Dsample.flag=false &quot;-Dsample.values=Final,Override&quot;"/>
+</launchConfiguration>
