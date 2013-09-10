@@ -1,5 +1,7 @@
 package net.kjunine.sample.value;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
 import org.slf4j.Logger;
@@ -27,6 +29,9 @@ public class SampleValueBeanByAnnotation {
 	@Value("#{${sample.flag:true}}")
 	private boolean flag;
 
+	@Value("#{'${sample.values:A,B,C}'.split(',')}")
+	private List<String> values;
+
 	@PostConstruct
 	public void initialize() {
 		logger.info("A sample bean by annotation has initialized.");
@@ -35,6 +40,7 @@ public class SampleValueBeanByAnnotation {
 		logger.info("Sample no: " + no);
 		logger.info("Sample value: " + value);
 		logger.info("Sample flag: " + flag);
+		logger.info("Sample values: " + values + " -> count: " + values.size());
 	}
 
 }

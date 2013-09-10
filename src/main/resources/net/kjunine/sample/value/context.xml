@@ -5,11 +5,12 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<bean class="net.kjunine.sample.value.SampleValueBeanByXml" init-method="initialize">
-		<property name="name" value="${sample.name:Default Name}" />
-		<property name="test" value="${sample.test:Default Test}" />
-		<property name="no" value="${sample.no:1}" />
-		<property name="value" value="${sample.value:10.0}" />
-		<property name="flag" value="${sample.flag:true}" />
+		<property name="name" value="#{'${sample.name:Default Name}'}" />
+		<property name="test" value="#{'${sample.test:Default Test}'}" />
+		<property name="no" value="#{${sample.no:1}}" />
+		<property name="value" value="#{${sample.value:10.0}}" />
+		<property name="flag" value="#{${sample.flag:true}}" />
+		<property name="values" value="#{'${sample.values:A,B,C}'.split(',')}"/>
 	</bean>
 
 </beans>

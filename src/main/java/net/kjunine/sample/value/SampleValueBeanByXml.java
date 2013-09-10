@@ -1,5 +1,7 @@
 package net.kjunine.sample.value;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +14,7 @@ public class SampleValueBeanByXml {
 	private int no;
 	private double value;
 	private boolean flag;
+	private List<String> values;
 
 	public void setName(String name) {
 		this.name = name;
@@ -33,6 +36,10 @@ public class SampleValueBeanByXml {
 		this.flag = flag;
 	}
 
+	public void setValues(List<String> values) {
+		this.values = values;
+	}
+
 	public void initialize() {
 		logger.info("A sample bean by xml has initialized.");
 		logger.info("Sample name: " + name);
@@ -40,6 +47,7 @@ public class SampleValueBeanByXml {
 		logger.info("Sample no: " + no);
 		logger.info("Sample value: " + value);
 		logger.info("Sample flag: " + flag);
+		logger.info("Sample values: " + values + " -> count: " + values.size());
 	}
 
 }
